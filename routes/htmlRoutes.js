@@ -7,6 +7,7 @@ module.exports = function(app) {
       res.render("index", {
         mushrooms: mushroomResult
       })
+      //res.redirect("/");
     });
   });
 

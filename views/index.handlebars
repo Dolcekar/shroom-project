@@ -71,6 +71,8 @@
       </div>
     </div>
   </div>
+</div>
+
 <div class="wrapper container">
   <row class="row">
     <column class="col-md-12">
@@ -78,12 +80,11 @@
     <ul id="mushroom-list" class="list-group">
       {{#each mushrooms}}
       <li data-id="{{this.id}}" class="list-group-item">
-        <span>{{this.id}}</span>
+        <span>{{this}}, {{this.class}}</span>
       </li>
       {{/each}}
     </ul>
     </column>
   </row>
 </div>
-
 <script src="/js/index.js"></script>
