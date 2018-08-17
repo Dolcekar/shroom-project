@@ -1,24 +1,14 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+  // Get all from one to the number!
+  app.get("/api/mushrooms/:number", function(req, res) {
+    var maxNumber = req.params.number;
+
+    db.mushroom.findAll({where: {id: {[db.Sequelize.Op.between]: [1, maxNumber]}}}).then(function(mushroomResult) {
+      res.json(mushroomResult);
     });
   });
 
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
-    });
-  });
-
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
-    });
-  });
+  app.get("/api/mushrooms")
 };
