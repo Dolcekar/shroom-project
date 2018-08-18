@@ -39,3 +39,7 @@ body { font-family: sans-serif; }
 .grid-item--height3 { height: 260px; }
 .grid-item--height4 { height: 360px; }
 
+text {
+  font-family: 'Tillana', cursive;
+}
+
