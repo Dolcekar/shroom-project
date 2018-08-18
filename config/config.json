@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Silvestr34!",
+    "password": "root",
     "database": "mushroom_db",
     "host": "localhost",
     "dialect": "mysql"
