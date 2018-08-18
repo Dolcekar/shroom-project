@@ -30,6 +30,22 @@ var API = {
   }
 };
 
+/* var i = 0;
+
+onclick of pictureEl {
+  var curQuestion = questionHtml + i;
+  $element.html(question.html);
+  i++;
+}
+submitElement = get Submit bttn element;
+
+submitElement.addEventListener("click", function(e) {
+  clickedId = e.target.id;
+  i++;
+}, false);
+*/
+
+
 
 // refreshExamples gets new examples from the db and repopulates the list
 var refreshExamples = function() {
