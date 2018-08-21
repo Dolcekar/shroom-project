@@ -36,11 +36,11 @@ var questionsArray = ["Is your mushroom bruised?", "What color is the cap of you
 "What type of veil does it have?"];
 var imgArray=[];
 var id;
-function questionsFunc() {
+// function questionsFunc() {
   
-  onClickImg();
+  
 
-}
+// }
 
 function onClickImg() {
   $('img').click(function() {
@@ -50,6 +50,7 @@ function onClickImg() {
   });
 };
 
+onClickImg();
 
 
 // var imgArray = [];
