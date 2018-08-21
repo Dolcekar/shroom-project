@@ -10,5 +10,19 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/api/mushrooms")
+  app.post("/api/mushrooms/answer", function(req, res) {
+    console.log("=============================");
+    console.log(req.body.property);
+    console.log("=============================");
+    var selection = req.body.property;
+
+    db.mushroom.findAll({
+      where: {
+        habitat: selection[0],
+        population: selection[1]
+      }
+    }).then(function(result) {
+      console.log(result);
+    })
+  })
 };

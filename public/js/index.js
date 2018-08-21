@@ -24,9 +24,11 @@ var questions = [
   }
 ]
 
-var currentQuestionIndex = 0;
 
 $(function() {
+
+  var currentQuestionIndex = 0;
+
   var answerArray = [];
 
   var initiateSurvey = function() {
@@ -56,16 +58,25 @@ $(function() {
 
     $(".btn").on("click", function() {
       chosenAnswer = event.target.id;
-      console.log(chosenAnswer);
-      $(".col").remove();
       answerArray.push(chosenAnswer);
       console.log(answerArray);
+
       currentQuestionIndex++;
+      $(".col").remove();
+      checkAnswers();
       initiateSurvey();
     })
   }
 
-  module.exports = answerArray;
+  var checkAnswers = function() {
+    $.ajax({
+      type: "POST",
+      url: "/api/mushrooms/answer",
+      contentType: "application/json",
+      charSet: 'utf-8',
+      data: JSON.stringify({ property: answerArray })
+    })
+  }
 
   initiateSurvey();
 })
