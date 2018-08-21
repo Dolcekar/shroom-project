@@ -29,6 +29,45 @@ var API = {
     });
   }
 };
+var questionsArray = ["Is your mushroom bruised?", "What color is the cap of your mushroom?", "What shape is the cap of your mushroom?", "What does the cap surface look like?", "What type of gill attachment do you observe in your mushroom?",
+"What color is the gill?", "What color is the cap of your mushroom?", "How does the gill space look?", "In what habitat did you encounter your mushroom?", "How many mushrooms of the same kind seem to be around it?",
+"How many rings do you see?", "What type of ring does it have (if any)?", "What is the color of the spore print?", "What is the color above the stalk?", "What is the color below the stalk?",
+"What is the stalk root like?", "what is the shape of the stalk?", "What is the surface like above the stalk", "What is the surface like below the stalk?", "What is the color of the veil?",
+"What type of veil does it have?"];
+var imgArray=[];
+var id;
+function questionsFunc() {
+  
+  onClickImg();
+
+}
+
+function onClickImg() {
+  $('img').click(function() {
+    id = this.id;
+    imgArray.push(id);
+    console.log(imgArray);
+  });
+};
+
+
+
+// var imgArray = [];
+
+
+// cEl = document.getElementById("c");
+// cEl.addEventListener("click", function (e) {
+//   console.log(e.target.id);
+// }, false);
+
+
+
+// imgArray.push(); // Dumped all the objects
+
+// for (let i = 0; i < imgArray.length; i++)
+//   imgArray[index].addEventListener("click", function(event) {
+//     console.log("you clicked region number " + index);
+//   });
 
 /* var i = 0;
 
