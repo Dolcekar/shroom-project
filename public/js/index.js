@@ -1,100 +1,66 @@
-// Get references to page elements
-var $exampleText = $("#example-text");
-var $exampleDescription = $("#example-description");
-var $submitBtn = $("#submit");
-var $exampleList = $("#example-list");
-
-// The API object contains methods for each kind of request we'll make
-var API = {
-  saveExample: function(example) {
-    return $.ajax({
-      headers: {
-        "Content-Type": "application/json"
-      },
-      type: "POST",
-      url: "api/examples",
-      data: JSON.stringify(example)
-    });
+var questions = [
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
   },
-  getExamples: function() {
-    return $.ajax({
-      url: "api/examples",
-      type: "GET"
-    });
-  },
-  deleteExample: function(id) {
-    return $.ajax({
-      url: "api/examples/" + id,
-      type: "DELETE"
-    });
+  {
+    question: "How many were there?",
+    options: [
+      {option: "Abundant", image: "/img/population/a.jpg", value: "a"},
+      {option: "Clustered", image: "/img/population/c.jpg", value: "c"},
+      {option: "Numerous", image: "/img/population/n.png", value: "n"},
+      {option: "Scattered", image: "/img/population/s.jpg", value: "s"},
+      {option: "Several", image: "/img/population/v.jpg", value: "v"},
+      {option: "Solitary", image: "/img/population/y.jpg", value: "y"},
+    ]
   }
-};
+]
 
+var currentQuestionIndex = 0;
 
-// refreshExamples gets new examples from the db and repopulates the list
-var refreshExamples = function() {
-  API.getExamples().then(function(data) {
-    var $examples = data.map(function(example) {
-      var $a = $("<a>")
-        .text(example.text)
-        .attr("href", "/example/" + example.id);
+$(function() {
+  var initiateSurvey = function() {
+    var currentQuestion = questions[currentQuestionIndex];
+    
+    $("#questionHeader").text(currentQuestion.question);
 
-      var $li = $("<li>")
-        .attr({
-          class: "list-group-item",
-          "data-id": example.id
-        })
-        .append($a);
+    for (var i = 0; i < currentQuestion.options.length; i++) {
+      var imgCol = $("<column class='col'>");
+      var imgCard = $("<div class='card border-primary' id='imgCard'>");
+      var imgCardBody = $("<div class='card-body'>")
 
-      var $button = $("<button>")
-        .addClass("btn btn-danger float-right delete")
-        .text("ｘ");
+      imgCard.append(imgCardBody);
 
-      $li.append($button);
+      imgCard.prepend("<img class='card-img-top imgCard' src='" + currentQuestion.options[i].image + "' >");
+      imgCardBody.append("<btn class='btn btn-primary' id='" + currentQuestion.options[i].value + "'>" + currentQuestion.options[i].option + "</btn>");
 
-      return $li;
-    });
+      imgCol.append(imgCard);
+      $("#imageRow").append(imgCol);
+    }
 
-    $exampleList.empty();
-    $exampleList.append($examples);
-  });
-};
-
-// handleFormSubmit is called whenever we submit a new example
-// Save the new example to the db and refresh the list
-var handleFormSubmit = function(event) {
-  event.preventDefault();
-
-  var example = {
-    text: $exampleText.val().trim(),
-    description: $exampleDescription.val().trim()
-  };
-
-  if (!(example.text && example.description)) {
-    alert("You must enter an example text and description!");
-    return;
+    submitAnswer();
   }
 
-  API.saveExample(example).then(function() {
-    refreshExamples();
-  });
+  var submitAnswer = function() {
+    var chosenAnswer = "";
 
-  $exampleText.val("");
-  $exampleDescription.val("");
-};
+    $(".btn").on("click", function() {
+      chosenAnswer = event.target.id;
+      console.log(chosenAnswer);
+      $(".col").remove();
+      currentQuestionIndex++;
+      initiateSurvey();
+    })
+  }
 
-// handleDeleteBtnClick is called when an example's delete button is clicked
-// Remove the example from the db and refresh the list
-var handleDeleteBtnClick = function() {
-  var idToDelete = $(this)
-    .parent()
-    .attr("data-id");
 
-  API.deleteExample(idToDelete).then(function() {
-    refreshExamples();
-  });
-};
-
-// Add event listeners to the submit and delete buttons
-$submitBtn.on("click", handleFormSubmit);
-$exampleList.on("click", ".delete", handleDeleteBtnClick);
+  initiateSurvey();
+})
