@@ -27,6 +27,8 @@ var questions = [
 var currentQuestionIndex = 0;
 
 $(function() {
+  var answerArray = [];
+
   var initiateSurvey = function() {
     var currentQuestion = questions[currentQuestionIndex];
     
@@ -56,11 +58,14 @@ $(function() {
       chosenAnswer = event.target.id;
       console.log(chosenAnswer);
       $(".col").remove();
+      answerArray.push(chosenAnswer);
+      console.log(answerArray);
       currentQuestionIndex++;
       initiateSurvey();
     })
   }
 
+  module.exports = answerArray;
 
   initiateSurvey();
 })
