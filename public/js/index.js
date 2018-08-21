@@ -21,6 +21,234 @@ var questions = [
       {option: "Several", image: "/img/population/v.jpg", value: "v"},
       {option: "Solitary", image: "/img/population/y.jpg", value: "y"},
     ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
+  },
+  {
+    question: "What habitat did you find your mushroom in?",
+    options: [
+      {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
+      {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
+      {option: "Meadow", image: "/img/habitat/m.jpg", value: "m"},
+      {option: "Path", image: "/img/habitat/p.jpg", value: "p"},
+      {option: "Urban", image: "/img/habitat/u.jpg", value: "u"},
+      {option: "Waste", image: "/img/habitat/w.jpg", value: "w"},
+      {option: "Woods", image: "/img/habitat/d.jpg", value: "d"}
+    ]
   }
 ]
 
