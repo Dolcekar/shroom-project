@@ -14,7 +14,12 @@ var questions = [
   {
     question: "How many were there?",
     options: [
-      {}
+      {option: "Abundant", image: "/img/population/a.jpg", value: "a"},
+      {option: "Clustered", image: "/img/population/c.jpg", value: "c"},
+      {option: "Numerous", image: "/img/population/n.png", value: "n"},
+      {option: "Scattered", image: "/img/population/s.jpg", value: "s"},
+      {option: "Several", image: "/img/population/v.jpg", value: "v"},
+      {option: "Solitary", image: "/img/population/y.jpg", value: "y"},
     ]
   }
 ]
@@ -25,20 +30,11 @@ $(function() {
   var initiateSurvey = function() {
     var currentQuestion = questions[currentQuestionIndex];
     
-    var panel = $("<div class='card text-primary border-primary'>");
-    var panelHeading = $("<div class='card-header'>");
-    var panelBody = $("<div class='card-body'>")
-    var imgRow = $("<row class='row'>")
-
-    panel.prepend(panelHeading);
-    panel.append(panelBody);
-    panelBody.append(imgRow);
-
-    panelHeading.text(currentQuestion.question);
+    $("#questionHeader").text(currentQuestion.question);
 
     for (var i = 0; i < currentQuestion.options.length; i++) {
       var imgCol = $("<column class='col'>");
-      var imgCard = $("<div class='card border-primary' style='width: 15rem'>");
+      var imgCard = $("<div class='card border-primary' id='imgCard'>");
       var imgCardBody = $("<div class='card-body'>")
 
       imgCard.append(imgCardBody);
@@ -47,12 +43,21 @@ $(function() {
       imgCardBody.append("<btn class='btn btn-primary' id='" + currentQuestion.options[i].value + "'>" + currentQuestion.options[i].option + "</btn>");
 
       imgCol.append(imgCard);
-      imgRow.append(imgCol);
+      $("#imageRow").append(imgCol);
     }
-    $(".panelRow").append(panel);
+
+    submitAnswer();
+  }
+
+  var submitAnswer = function() {
+    var chosenAnswer = "";
 
     $(".btn").on("click", function() {
-      console.log(event.target.id);
+      chosenAnswer = event.target.id;
+      console.log(chosenAnswer);
+      $(".col").remove();
+      currentQuestionIndex++;
+      initiateSurvey();
     })
   }
 
