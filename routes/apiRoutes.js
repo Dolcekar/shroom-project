@@ -10,5 +10,39 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/api/mushrooms")
+  app.post("/api/mushrooms/answer", function(req, res) {
+    
+    var selection = req.body.property;
+    console.log("=============================");
+    console.log(selection);
+    console.log("=============================");
+
+    db.mushroom.findAll({
+      where: {
+        "habitat": selection[0],
+        "population": selection[1],
+        "cap-surface": selection[2],
+        "cap-color": selection[3],
+        "cap-shape": selection[4],
+        "bruises": selection[5],
+        "gill-attachment": selection[6],
+        "gill-color": selection[7],
+        "gill-spacing": selection[8],
+        "gill-size": selection[9],
+        "ring-number": selection[10],
+        "ring-type": selection[11],
+        "stalk-color-above-ring": selection[12],
+        "stalk-color-below-ring": selection[13],
+        "stalk-surface-above-ring": selection[14],
+        "stalk-surface-below-ring": selection[15],
+        "stalk-root": selection[16],
+        "stalk-shape": selection[17],
+        "veil-color": selection[18],
+        "spore-print-color": selection[19],
+        "odor": selection[20]
+      }
+    }).then(function(result) {
+      res.json(result);
+    })
+  })
 };
