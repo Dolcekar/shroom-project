@@ -278,6 +278,13 @@ $(function() {
       data: JSON.stringify({ property: answerArray })
     }).done(function(data) {
       console.log(data);
+      var mushroom = data[0];
+      var mushroomId = mushroom.id;
+      if (mushroom.class = "p") {
+        console.log("its poisonous dont eat it!");
+      } else {
+        console.log("it's safe to eat!");
+      }
     })
   }
 
