@@ -16,6 +16,11 @@ module.exports = function(app) {
     res.json(questionData);
   })
 
+  app.post("/api/upload", function(req, res) {
+    console.log(req.files);
+    var chosenFile = req.files[0];
+  })
+
   app.post("/api/answer", function(req, res) {
     
     var selection = req.body.property;
