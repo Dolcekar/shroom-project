@@ -69,7 +69,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
   secret: 'asdf;lkjh3lkjh235l23h5l235kjh',
-  resave: true,
+  resave: false,
   saveUninitialized: false
 }));
 app.use(oidc.router);
