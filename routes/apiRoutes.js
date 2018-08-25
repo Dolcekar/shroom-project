@@ -1,4 +1,5 @@
 var db = require("../models");
+var questionData = require("../data/questions.js");
 
 module.exports = function(app) {
   // Get all from one to the number!
@@ -10,7 +11,12 @@ module.exports = function(app) {
     });
   });
 
-  app.post("/api/mushrooms/answer", function(req, res) {
+  app.get("/api/questions", function(req, res) {
+    console.log("========================");
+    res.json(questionData);
+  })
+
+  app.post("/api/answer", function(req, res) {
     
     var selection = req.body.property;
     console.log("=============================");
