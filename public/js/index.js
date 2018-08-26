@@ -109,7 +109,7 @@ $(function() {
 
   var initializeResults = function(mushroomKey) {
     var resultColumn = $("<column class='col-md-12 text-center'>");
-    var resultHeader = $("<h3>Submit an image of your mushroom to help other aspiring mycologists!")
+    var resultHeader = $("<h3 id=`resultHeader`>Submit an image of your mushroom to help other aspiring mycologists!</h3>")
     $(resultColumn).prepend(resultHeader);
     $("#imageRow").append(resultColumn);
 
@@ -132,7 +132,7 @@ $(function() {
     // On upload button click, run file upload with listed parameters and change resultHeader text
     $(submitInput).on("click", function() {
       fileUpload(file, storageRef, mushroomKey);
-      $(resultHeader).text("Would you like to upload another image?");
+      $("#resultHeader").text("Would you like to upload another image?");
     });
   }
 
