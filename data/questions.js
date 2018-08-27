@@ -1,6 +1,7 @@
 var questions = [
     {
       question: "What habitat did you find your mushroom in?",
+      help: "Help",
       options: [
         {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
         {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},

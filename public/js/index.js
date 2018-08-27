@@ -21,6 +21,7 @@ $(function() {
     var currentQuestion = questionData[currentQuestionIndex];
     
     $("#questionHeader").text(currentQuestion.question);
+    $("#questionHeader").text(currentQuestion.help); //added help icon-ish
 
     for (var i = 0; i < currentQuestion.options.length; i++) {
       var imgCol = $("<column class='col'>");
