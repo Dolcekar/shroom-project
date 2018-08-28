@@ -1,6 +1,7 @@
 var questions = [
     {
       question: "What habitat did you find your mushroom in?",
+      
       options: [
         {option: "Grassy", image: "/img/habitat/g.jpg", value: "g"},
         {option: "Leaves", image: "/img/habitat/l.jpg", value: "l"},
@@ -48,6 +49,7 @@ var questions = [
     },
     {
       question: "What shape is the cap of your mushroom?",
+      help: "/img/help/cap-shape.png",
       options: [
         {option: "Bell", image: "/img/capShape/b.jpg", value: "b"},
         {option: "Conical", image: "/img/capShape/c.jpg", value: "c"},
@@ -59,6 +61,7 @@ var questions = [
     },
     {
       question: "Is your mushroom bruised?",
+      help: "/img/help/bruised.png",
       options: [
         {option: "Yes", image: "/img/bruised/t.jpg", value: "t"},
         {option: "No", image: "/img/bruised/f.jpg", value: "f"}
@@ -66,6 +69,7 @@ var questions = [
     },
     {
       question: "What type of gill attachment do you observe in your mushroom?",
+      help: "/img/help/gill-attachment.png",
       options: [
         {option: "Attached", image: "/img/gillAttachment/a.jpg", value: "a"},
         {option: "Free", image: "/img/gillAttachment/f.jpg", value: "f"}
