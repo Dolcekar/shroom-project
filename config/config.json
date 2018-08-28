@@ -1,25 +1,23 @@
-
-
 {
   "development": {
     "username": "djbatt_guest",
     "password": "guest",
-    "database": "mushroom_db",
+    "database": "djbatt_mushroom_db",
     "host": "192.232.216.115",
     "dialect": "mysql"
   },
   "test": {
-    "username": "djbatt_guest",
-    "password": "guest",
-    "database": "mushroom_db",
-    "host": "192.232.216.115",
+    "username": "root",
+    "password": null,
+    "database": "testdb",
+    "host": "localhost",
     "dialect": "mysql",
     "logging": false
   },
   "production": {
     "username": "djbatt_guest",
     "password": "guest",
-    "database": "mushroom_db",
+    "database": "djbatt_mushroom_db",
     "host": "192.232.216.115",
     "dialect": "mysql"
   }
