@@ -46,6 +46,15 @@ $(function() {
        case 6:
        button();
        break;
+       case 12:
+       button();
+       break;
+       case 13:
+       button();
+       break;
+       case 15:
+       button();
+       break;
     }
     // <button class='btn btn-primary' id='help' style='float: left'>Help</button>
     // button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top"

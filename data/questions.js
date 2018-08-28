@@ -126,6 +126,7 @@ var questions = [
     },
     {
       question:  "What is the stalk color above the ring?",
+      help: "/img/help/guide.png",
       options: [
         {option: "Buff", image: "/img/stalkColorAbove/b.jpg", value: "b"},
         {option: "Red", image: "/img/stalkColorAbove/e.jpg", value: "e"},
@@ -139,6 +140,7 @@ var questions = [
     },
     {
       question: "What is the stalk color below the ring?",
+      help: "/img/help/guide.png",
       options: [
         {option: "Buff", image: "/img/stalkColorBelow/b.jpg", value: "b"},
         {option: "Red", image: "/img/stalkColorBelow/e.jpg", value: "e"},
@@ -161,6 +163,7 @@ var questions = [
     },
     {
       question: "What is the stalk surface like below the ring?",
+      help: "/img/help/stalkSurf.png",
       options: [
         {option: "Fibrous", image: "/img/stalkSurfaceBelow/f.jpg", value: "f"},
         {option: "Silky", image: "/img/stalkSurfaceBelow/k.jpg", value: "k"},
