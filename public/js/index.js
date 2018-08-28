@@ -29,11 +29,47 @@ $(function() {
 
   var answerArray = [];
 
+
   var initiateSurvey = function(questionData) {
     // Initiates survey everytime page is refreshed or user submits and answer
     var currentQuestion = questionData[currentQuestionIndex];
     
     $("#questionHeader").text(currentQuestion.question);
+    
+    switch (currentQuestionIndex) {
+       case 4:
+       button();
+       break;
+       case 5:
+       button();
+       break;
+       case 6:
+       button();
+       break;
+       case 12:
+       button();
+       break;
+       case 13:
+       button();
+       break;
+       case 15:
+       button();
+       break;
+    }
+    // <button class='btn btn-primary' id='help' style='float: left'>Help</button>
+    // button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top"
+    function button() {
+      var helpButton = $("<button class='btn btn-secondary' id='help' style='float: left'>Help</button>")
+      $("#questionHeader").append(helpButton);
+  
+      $(helpButton).popover({
+        html: true,
+        trigger: 'hover',
+        placement: 'bottom',
+        content: function() {return "<img src=" + currentQuestion.help + ">"}
+      });
+    }
+
 
     for (var i = 0; i < currentQuestion.options.length; i++) {
       var imgCol = $("<column class='col'>");
@@ -43,7 +79,7 @@ $(function() {
       imgCard.append(imgCardBody);
 
       imgCard.prepend("<img class='card-img-top imgCard' src='" + currentQuestion.options[i].image + "' >");
-      imgCardBody.append("<btn class='btn btn-primary' id='" + currentQuestion.options[i].value + "'>" + currentQuestion.options[i].option + "</btn>");
+      imgCardBody.append("<btn class='btn btn-primary choice' id='" + currentQuestion.options[i].value + "'>" + currentQuestion.options[i].option + "</btn>");
 
       imgCol.append(imgCard);
       $("#imageRow").append(imgCol);
@@ -57,7 +93,7 @@ $(function() {
     // On button click set chosenAnswer to buttons id and then push that id into the answerArray
     var chosenAnswer = "";
 
-    $(".btn").on("click", function() {
+    $(".choice").on("click", function() {
       chosenAnswer = event.target.id;
       answerArray.push(chosenAnswer);
       console.log(answerArray);
