@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "Silvestr34!",
-    "database": "mushroom_db",
-    "host": "localhost",
+    "username": "djbatt_guest",
+    "password": "guest",
+    "database": "djbatt_mushroom_db",
+    "host": "192.232.216.115",
     "dialect": "mysql"
   },
   "test": {
@@ -15,7 +15,10 @@
     "logging": false
   },
   "production": {
-    "use_env_variable": "JAWSDB_URL",
+    "username": "djbatt_guest",
+    "password": "guest",
+    "database": "djbatt_mushroom_db",
+    "host": "192.232.216.115",
     "dialect": "mysql"
   }
 }
