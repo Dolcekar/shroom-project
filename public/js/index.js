@@ -1,9 +1,7 @@
 $(function() {
 
   var currentURL = window.location.origin;
-
-  //first mushroom in list  [ 'u', 's', 's', 'n', 'x', 't', 'f', 'k', 'c', 'n', 'o', 'p', 'w', 'w', 's', 's', 'e', 'e', 'w', 'k', 'p' ]
-
+  
   var config = {
     apiKey: "AIzaSyBfJNlPh-b7-lqmn1rW0RalXVtYBLWkyWk",
     authDomain: "shroom-project.firebaseapp.com",
