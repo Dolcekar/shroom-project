@@ -15,10 +15,7 @@
     "logging": false
   },
   "production": {
-    "username": "djbatt_guest",
-    "password": "guest",
-    "database": "djbatt_mushroom_db",
-    "host": "192.232.216.115",
+    "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }
 }
